@@ -16,7 +16,7 @@ if format == 'a':
             'preferredcodec': 'mp3',
             'preferredquality': '320',
         }],
-        'ffmpeg_location': 'ffmpeg.exe'  
+        'ffmpeg_location': 'ffmpeg.exe'  #this is optional, but recommended to avoid issues.
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download(link)
